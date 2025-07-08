@@ -1,13 +1,17 @@
-# Count only Python files
+# Treat only Python as detectable
 *.py linguist-detectable=true
 
-# Ignore documentation, config, and non-code files
-README.md linguist-documentation
+# Ignore all other formats
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
 *.spec linguist-detectable=false
 *.md linguist-documentation
 *.png linguist-detectable=false
+*.json linguist-detectable=false
+*.yml linguist-detectable=false
 
-# Ignore common non-code folders
+# Ignore non-code folders
 dist/ linguist-vendored
 env/ linguist-vendored
 __pycache__/ linguist-generated
