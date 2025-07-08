@@ -1,14 +1,13 @@
-# Count only Python files for language stats
+# Count only Python files
 *.py linguist-detectable=true
 
-# Ignore unrelated types
-*.html linguist-detectable=false
-*.css linguist-detectable=false
-*.js linguist-detectable=false
-*.tex linguist-detectable=false
-*.log linguist-detectable=false
+# Ignore documentation, config, and non-code files
+README.md linguist-documentation
+*.spec linguist-detectable=false
+*.md linguist-documentation
+*.png linguist-detectable=false
 
-# Ignore these folders
+# Ignore common non-code folders
 dist/ linguist-vendored
 env/ linguist-vendored
 __pycache__/ linguist-generated
